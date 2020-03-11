@@ -10,9 +10,9 @@ const header = props => {
             <Parallax
                 image={props.image}
              />
-             <Navigation 
+             {/* <Navigation 
              
-             />
+             /> */}
         </section>
     )
 

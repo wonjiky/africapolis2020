@@ -1,6 +1,6 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
-// import classes from './Parallax.module.css';
+import classes from './Parallax.module.css';
 
 
 const insideStyles = {
@@ -17,7 +17,7 @@ const parallax = props => {
     return(
         <Parallax
             bgImage={props.image}
-            strength={1000}
+            strength={0}
         >
             <div style={{height: "650px"}}>
                 <div style={insideStyles}>

@@ -1,0 +1,16 @@
+.content {
+    position: relative;
+    z-index: 2;
+    background-color: lightcoral;
+    min-height: 100vh;
+}
+
+.home {
+
+}
+
+.home_intro {
+    position: fixed;
+    height: 100%;   
+    right: 0;
+}

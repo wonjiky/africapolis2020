@@ -1,3 +1,13 @@
 .Parallax {
     color: red;
 }
+
+.ParallaxContainer {
+    width: 100%;
+    height: 20vh;
+}
+
+.ParallaxContainer img {
+    max-width: 100%;
+    /* max-height: 100%; */
+}
