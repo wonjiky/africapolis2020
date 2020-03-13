@@ -1,0 +1,15 @@
+{
+    "menu": {
+        "list": [
+            { "id": 1, "type": "Countries" },
+            { "id": 2, "type": "Research" },
+            { "id": 3, "type": "Data" },
+            { "id": 4, "type": "About" }
+        ],
+        "logos": {
+            "africapolis": "africapolis",
+            "swac_en": "swac_en",
+            "swac_fr": "swac_fr"
+        }
+    }
+}

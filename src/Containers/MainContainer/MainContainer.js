@@ -1,5 +1,5 @@
 import React from 'react';
-import BackgroundImage from '../../source/bg__main.jpg';
+import BackgroundImage from '../../assets/bg__main.jpg';
 import Container from '../../hoc/Container';
 import Header from '../../Headers/Header/Header';
 import classes from './MainContainer.module.css';
@@ -8,18 +8,22 @@ class MainContainer extends React.Component {
 
     render(){
         return (
-            <main className={classes.content}>
-                <div className={classes.home}>
-                    <div className={classes.home_intro}>
-                        <div className={classes.home_video}>
-                            <img src={BackgroundImage} />
-                        </div>
-                    </div>
-                    <div className={classes.home_content}>
+            <div className={classes.MainContainer}>
+                {/* <h1>HELLO WORLD</h1> */}
+            </div>
+        //    <div className={classes.MainContainer}>
+        //             <figure className={classes.Figure}>
+        //                 <div className={classes.Square}>
+        //                     <img className={classes.Image} src={BackgroundImage} />
+        //                     <h1>
+        //                         Africapolis
+        //                     </h1>
+        //                 </div>
+        //             </figure>
 
-                    </div>
-                </div>
-            </main>
+        //             <div className={classes.Contents}>
+        //             </div>
+        //    </div>
         )
     }
 

@@ -1,16 +1,63 @@
-.content {
+.MainContainer {
+
+    height: 50vh;
+    
+    display: flex;
+    flex-flow: column wrap;
+    /* position: relative; */
+    /* min-height: 650px; */
+    /* padding-top: 100px; */
+    margin-top: -16px;
+    background-color: lightseagreen;
+}
+
+.Figure {
+    /* margin-top: -100px; */
     position: relative;
-    z-index: 2;
-    background-color: lightcoral;
-    min-height: 100vh;
+    width: 100vw;
+    height: 650px;
+    left: 50%;
+    margin-left: -50vw;
+    overflow: hidden;
+    background-color: black;
 }
 
-.home {
-
+.Square {
+    position: absolute;
+    width: 100vw;
+    height: 650px;
+    background-color: white;
+    clip: rect(0, auto, auto, 0);
 }
 
-.home_intro {
+.Images {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 650px;
+}
+
+.Image {
     position: fixed;
-    height: 100%;   
+    z-index: 0;
+    left: 0;
+    top: 0;
     right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 650px;
+    background-size: cover;
+    /* background-position: center center; */
+}
+
+.Contents {
+    height: 3000px;
+    /* background-color: lightslategray; */
+}
+
+h1 {
+    font-size: 3rem;
+    position: fixed;
+    color: white;
 }
