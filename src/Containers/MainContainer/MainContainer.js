@@ -1,5 +1,5 @@
 import React from 'react';
-import BackgroundImage from '../../assets/bg__main.jpg';
+import BackgroundImage from '../../Assets/images/bg__main.jpg';
 import Container from '../../hoc/Container';
 import Header from '../../Headers/Header/Header';
 import classes from './MainContainer.module.css';

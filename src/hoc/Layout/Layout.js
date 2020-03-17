@@ -10,7 +10,6 @@ class Layout extends React.Component {
             <>
                 <Header data={menuData} />
                 {this.props.children}
-                
             </>
         )
     }

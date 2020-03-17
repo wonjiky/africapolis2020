@@ -1,9 +1,13 @@
 .Logo {
-    width: 100%;
     height: 100%;
+    display: flex;
 }
 
 .Logo img {
-    width: 100%;
-    height: 100%;
+    width: 65%;
+}
+
+.Main__nav {
+    align-items: center;
+    justify-content: center;
 }
