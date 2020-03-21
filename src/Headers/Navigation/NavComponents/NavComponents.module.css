@@ -1,0 +1,19 @@
+.NavWrapper {
+    /* width: 1384px; */
+    margin: 0 auto;
+}
+
+.NavContainer {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.NavHeader {
+    width: 30%;
+    background: lightcyan;
+}
+
+.NavList {
+    margin-left: 32px;
+    background: lightcyan;
+}

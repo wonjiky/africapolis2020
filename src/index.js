@@ -15,9 +15,7 @@ importConfig.get('config.json')
                 const app = (
                         // <Provider store={store}>
                             <BrowserRouter basename="/">
-                                <Layout disclaimer={config.Disclaimer} menuData={config.menu} >
                                     <App config={config} /> 
-                                </Layout>
                             </BrowserRouter>
                         // </Provider> 
                     )

@@ -1,0 +1,49 @@
+@media screen and (min-width: 960px) {
+    .Backdrop {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        opacity: 0;
+        z-index: 1099;
+        visibility: hidden;
+        transition: opacity .19s linear .1s, visibility 0ms .2s;
+    }
+    
+    .Backdrop.active {
+        opacity: .3;
+        visibility: visible;
+        transition: opacity .19s linear;
+    }
+
+    .Backdrop__Mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 959px) {
+
+    .Backdrop__Mobile {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        opacity: 0;
+        z-index: 1099;
+        visibility: hidden;
+        transition: opacity .19s linear .1s, visibility 0ms .2s;
+    }
+
+    .Backdrop__Mobile.active {
+        opacity: .3;
+        visibility: visible;
+        transition: opacity .19s linear;
+    }
+
+    .Backdrop {
+        display: none;
+    }
+}

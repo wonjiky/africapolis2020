@@ -1,13 +1,31 @@
 .Logo {
     height: 100%;
     display: flex;
+    align-items: center;
 }
 
 .Logo img {
-    width: 65%;
+    position: absolute;
+    /* padding: 10px 0; */
+    height: 65%;
 }
 
-.Main__nav {
-    align-items: center;
-    justify-content: center;
+.Main__nav:first-child {
+    transition: opacity .19s linear .2s; 
+    opacity: 0;
+}
+
+.Main__nav:last-child {
+    transition: opacity .19s linear .2s; 
+    opacity: 1;
+}
+
+.active:first-child{
+    transition: opacity .19s linear; 
+    opacity: 1;
+}
+
+.active:last-child{
+    transition: opacity .19s linear; 
+    opacity: 0;
 }

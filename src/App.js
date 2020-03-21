@@ -2,6 +2,7 @@ import React from 'react';
 import MainContainer from '../src/Containers/MainContainer/MainContainer';
 import CountryReportContainer from '../src/Containers/CountryReportContainer/CountryReportContainer';
 import queryString from 'query-string';
+import Layout from './hoc/Layout/Layout';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
@@ -18,20 +19,20 @@ class App extends React.Component {
 			// { ID:5, component: TestTheAPIContainer, path: "/test-the-api", exact: false},
 		];
 		
-		console.log(config);
-
 		return (
-			<Switch>
-				{routes.map( ({ ID, component: C, path, exact }) => (
-					<Route 
-						key={ID}
-						path={path}
-						exact={exact}
-						render={( {location, history}) =>
-							<C q={getParams(location)} history={history} config={config} /> } 
-					/>
-				))}
-			</Switch>
+			<Layout config={config}>
+				<Switch>
+					{routes.map( ({ ID, component: C, path, exact }) => (
+						<Route 
+							key={ID}
+							path={path}
+							exact={exact}
+							render={( {location, history}) =>
+								<C q={getParams(location)} history={history} config={config} /> } 
+						/>
+					))}
+				</Switch>
+			</Layout>
 		);
 	}
 }

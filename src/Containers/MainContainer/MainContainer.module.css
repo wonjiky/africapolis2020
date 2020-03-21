@@ -1,7 +1,7 @@
 .MainContainer {
 
     height: 50vh;
-    
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
     /* position: relative; */

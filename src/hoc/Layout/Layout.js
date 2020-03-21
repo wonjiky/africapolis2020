@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from '../../Headers/Header/Header';
+import Headers from '../../Headers/Headers';
+import classes from './Layout.module.css';
 
 class Layout extends React.Component {
     render() {
 
-        const { menuData } = this.props;
-        
+        const { config } = this.props;
         return (
             <>
-                <Header data={menuData} />
+                <Headers config={config} />
                 {this.props.children}
             </>
         )

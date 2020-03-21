@@ -9,8 +9,7 @@ class MainContainer extends React.Component {
     render(){
         return (
             <div className={classes.MainContainer}>
-                {/* <h1>HELLO WORLD</h1> */}
-            </div>
+           </div> 
         //    <div className={classes.MainContainer}>
         //             <figure className={classes.Figure}>
         //                 <div className={classes.Square}>

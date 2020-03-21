@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font-family: 'Hind Guntur';
+  /* line-height: 18px; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,3 +13,6 @@ code {
     monospace;
 }
 
+html {
+  width: 100vw;
+}
