@@ -1,0 +1,53 @@
+.Navigation {
+    height: 390px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    cursor: default;
+    visibility: hidden;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity .19s linear .2s, visibility 0ms .4s;
+    background-color: white;
+    z-index: 1100;
+    padding-top:30px; 
+}
+
+.Navigation::before {
+    position: absolute;
+    width: 100%;
+    content:"";
+    display: block;
+    top: -1px;
+    height: 1px;
+    background: #e3e3e3;
+    transition: opacity .19s linear .2s, visibility 0ms .2s;
+}
+
+.Navigation.active::before{
+    opacity: 1;
+    transition: opacity .19s linear;
+}
+
+.Navigation.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .19s linear;
+}
+
+/* h1 {
+    color: black !important;
+}
+
+h1::after {
+    display:block;
+    content: '';
+    border-bottom: solid 10px black;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+h1:hover:after{
+    transform: scaleX(1);
+} */

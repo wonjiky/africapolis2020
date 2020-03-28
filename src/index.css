@@ -1,4 +1,4 @@
-@font-face { font-family: Platform; src: url('./Assets/fonts/Platform-Medium.otf'); } 
+@font-face { font-family: Platform; src: url('./assets/fonts/Platform-Light.otf'); } 
 
 body {
   margin: 0;
@@ -15,4 +15,11 @@ code {
 
 html {
   width: 100vw;
+}
+
+a { text-decoration: none; }
+
+ul { 
+  list-style: none; 
+  padding: 0;
 }
