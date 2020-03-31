@@ -1,39 +1,55 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Backdrop, BackdropMobile } from '../../../static';
-import { MobileHeader, Header} from '../index';
+import { MobileHeaderWrapper, Header } from '../index';
 import classes from './css/Headers.module.css';
 
 const Headers = props => {
+    const { match, location, i18n } = props;
 
-    const { config, match, location } = props; // set props and other data
-    /* @@ SWAC LOGO @@ */
-    // swac_en = config.logos.swac_en,
-    // swac_fr = config.logos.swac_fr;
+    /**
+     * detect mouseOver event to set nav ids as state
+     * detect mobileoggle
+     */
+    const [ mouseOver, setMouseOver ] = useState(null);
+    const [ mobileToggle, setMobileToggle ] = useState(false); 
 
-    const [ mouseOver, setMouseOver ] = useState({ selected: null }); // detect mouseOver event from header
-    const [ clicked, setClick ] = useState(false); // detect mobile toggle
-
+    /**
+     * Set mobile toggle value to false to set sidebar display
+     */
+    const prevLocRef = useRef();
     useEffect(() => {
-        // Set mobile toggle click false to set sidebar display
-        const handleResize = () => window.innerWidth >= 960 ? setClick(false) : null
+     
+        const handleResize = () => window.innerWidth >= 960 ? setMobileToggle(false) : null
         window.addEventListener('resize', handleResize)
+        
+        prevLocRef.current = location.pathname;
+        const prevLocation = prevLocRef.current;
+        if ( location.pathname !== prevLocation.pathname ) { 
+            setMouseOver(null);
+            setMobileToggle(false);
+        }
+        
         return () => { window.removeEventListener('resize', handleResize);};
-    });
-
+    }, [location.pathname]);
+    
     return (
-        <header className={mouseOver.selected !== null ? classes.active : ''}>
+        <header className={mouseOver !== null ? classes.active : ''}>
             <Header 
-                data={config}
-                pathname={location.pathname} url={match.url} 
-                africapolisLogos={[config.logos.africapolis, config.logos.africapolisWhite]}
-                toggleHover={(value) => setMouseOver({ selected: value })}
-                toggleLeave={() => setMouseOver({selected: null})}
-                mobileHeaderToggle={() => setClick(!clicked)}
+                data={i18n}
                 mouseOver={mouseOver}
+                pathname={location.pathname} locale={match.url} 
+                toggleHover={(value) => setMouseOver(value)}
+                toggleLeave={() => setMouseOver(null)}
+                mobileHeaderToggle={() => setMobileToggle(!mobileToggle)}
             />
-            <Backdrop hovered={mouseOver.selected}  />
-            <MobileHeader clicked={clicked} />
-            <BackdropMobile clicked={clicked} handleBackdrop={() => setClick((!clicked))}/>
+            <Backdrop hovered={mouseOver}  />
+            <MobileHeaderWrapper
+                data={i18n} 
+                mobileToggle={mobileToggle} 
+                pathname={location.pathname} locale={match.url} 
+                closed={() => setMobileToggle(!mobileToggle)} 
+            />
+            <BackdropMobile mobileToggle={mobileToggle} handleBackdrop={() => setMobileToggle((!mobileToggle))}/>
         </header>
     )
 }

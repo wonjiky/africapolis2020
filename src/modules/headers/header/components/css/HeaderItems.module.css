@@ -1,3 +1,43 @@
+.HeaderItems {
+    display: none;
+}
+
 .active {
     color: black;
+}
+
+.HeaderItem{
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.Item {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: inherit;
+    box-sizing: border-box;
+    padding: 23px 30px 20px 30px;
+    transition: color .19s linear .2s; 
+}
+
+.Item.active {
+    transition: color .19s linear, opacity .19s linear; 
+    color: #2e2e2e;
+    opacity: 1;
+}
+
+/* .Item.active.selected{
+    transition: opacity .19s linear;
+    opacity: 1;
+} */
+
+@media screen and (min-width: 960px) {
+    .HeaderItems {
+        display: flex;
+    }
 }

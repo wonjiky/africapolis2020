@@ -1,16 +1,16 @@
 import React from 'react';
 import { Headers } from '../../headers/header';
+import { Footer } from '../../footer';
 // import classes from './Layout.module.css';
 
 export default props => {
-
-    const { config } = props;
     return (
         <>
-            <Headers config={config} {...props} />
+            <Headers {...props} />
             <main>
                 {props.children}
             </main>
+            <Footer />
         </>
     )
 }

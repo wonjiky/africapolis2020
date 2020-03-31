@@ -1,36 +1,41 @@
 import React from 'react';
-import { HeaderItem } from '../index';
-import { MobileHeaderButton } from '../../../static';
 import { NavLink } from 'react-router-dom';
+import { Localiser } from '../../../static';
+import { Navigation } from '../../navigation'; 
 import classes from './css/HeaderItems.module.css';
 
-
-const generateUrl = (locale, path) => {
-    let url = '/' + locale + path.substring(3)
-    return url;
-}
-
 export default props => {
-    const { data, mouseOver, url, pathname } = props;
+    const { mouseOver, data, locale, pathname } = props;
     return (
-        <nav>   
-            <ul className={mouseOver.selected !== null ? classes.active : null}>
-                {data.head.map((d, idx) => {
-                    return <HeaderItem 
-                        key={`Nav_Item__${idx}`}
-                        itemId={d.id}
-                        item={d.type}
-                        pathname={pathname} url={url} 
-                        navData={data.navigation[idx]}
-                        mouseOver={mouseOver}
-                        toggleHover={props.toggleHover}
-                        toggleLeave={props.toggleLeave}
-                    />
-                })}
-                <li><NavLink to={generateUrl('en', pathname)}>EN</NavLink></li>
-                <li><NavLink to={generateUrl('fr', pathname)}>FR</NavLink></li>
-                <MobileHeaderButton mobileHeaderToggle={props.mobileHeaderToggle} />
-            </ul>
-        </nav>
+        <ul className={mouseOver !== null ? classes.active : classes.HeaderItems}>
+            {data.nav.map((d, idx) => {
+                let linkStyle = classes.Item;
+                if ( mouseOver !== null ) {
+                    linkStyle = [classes.Item, classes.active].join(' ');
+                    if ( mouseOver === d.id ) linkStyle = [linkStyle, classes.selected].join(' ');
+                }
+                return (
+                    <li key={idx} 
+                        className={classes.HeaderItem} 
+                        onMouseEnter={() => props.toggleHover(d.id)} 
+                        onMouseLeave={props.toggleLeave}>
+                        <NavLink 
+                            to={`${locale}/${d.url}`} 
+                            className={linkStyle} 
+                            exact={d.exact}>
+                            {d.item}
+                        </NavLink>
+                        <Navigation 
+                            itemId={d.id}
+                            navUrl={d.url} 
+                            locale={locale}
+                            pathname={pathname} 
+                            data={d.menu} 
+                            selected={mouseOver} />
+                    </li>
+                )
+            })}
+        <Localiser data={data.i18nSelector} pathname={pathname} mouseOver={mouseOver} />
+    </ul>
     )
 }

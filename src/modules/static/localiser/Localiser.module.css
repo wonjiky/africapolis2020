@@ -1,0 +1,55 @@
+.HeaderItem{
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.HeaderItem:nth-child(6) .i18nStyle {
+    padding-right: 0;
+}
+
+.i18nStyle {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: inherit;
+    box-sizing: border-box;
+    padding: 23px 3px 20px 3px;
+    transition: color .19s linear .2s; 
+}
+
+/* .i18nStyle:hover {
+    color: #2e2e2e;
+} */
+
+.i18nStyle.active {
+    transition: color .19s linear, opacity .19s linear; 
+    color: #2e2e2e;
+    opacity: 1;
+}
+
+@media screen and (max-width: 959px) {
+    .HeaderItem{
+        display: flex;
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: 300;
+        padding: 10px 0 0 0;
+        cursor: pointer;
+    }
+
+    .i18nStyle {
+        position: relative;
+        text-decoration: none;
+        color: #2e2e2e;
+        width: 100%;
+        height: inherit;
+        box-sizing: border-box;
+        padding: 0 25px;
+        transition: color .19s linear .2s; 
+    }
+    
+}

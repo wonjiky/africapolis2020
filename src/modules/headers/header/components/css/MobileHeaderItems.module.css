@@ -1,0 +1,129 @@
+/* @@@ WEB VERSION */
+.HeaderItems {
+    display: none;
+}
+
+.active {
+    color: black;
+}
+
+.HeaderItem{
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.Item {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: inherit;
+    box-sizing: border-box;
+    padding: 23px 30px 20px 30px;
+    transition: color .19s linear .2s; 
+}
+
+.Item.active {
+    transition: color .19s linear, opacity .19s linear; 
+    color: #2e2e2e;
+    opacity: 1;
+}
+
+/* .Item.active.selected{
+    transition: opacity .19s linear;
+    opacity: 1;
+} */
+
+@media screen and (min-width: 960px) {
+    .HeaderItems {
+        display: flex;
+    }
+}
+
+.Mobile_HeaderList {
+    display: flex;
+    flex-grow: 1;
+    flex-flow: column;
+    justify-content: space-between;
+    transform: translateZ(0);
+    transition: transform .35s ease;
+    
+}
+
+.Level__1 {
+    transform: translate3d(-100%, 0, 0);
+}
+
+.Level__2 {
+    transform: translate3d(-200%, 0, 0);
+}
+
+.Mobile_NavItems {
+    margin: 0;
+    flex-flow: column;
+}
+
+.Mobile_Item {
+    padding-top: 25px;
+}
+
+.Mobile_Item_2 {
+    padding-top: 10px;
+}
+.Mobile_Item_2:first-child {
+    padding-top: 25px;
+}
+
+.Mobile_Item button,
+.Mobile_Item_Link,
+.Mobile_Item button span {
+    display: flex;
+    width: 100%;
+    color: #2e2e2e;
+    padding: 0 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    box-sizing: border-box;
+}
+
+.Mobile_Item button {
+    font-weight: 500;
+}
+
+.Mobile_Item_Link {
+    font-weight: 300;
+}
+
+.Mobile_Item button > span {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.Mobile_Menu_Level1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+}
+
+.Mobile_Menu_Level2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 200%;
+    overflow-y: scroll;
+}
+
+.show {
+    display: block;
+}

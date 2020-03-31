@@ -6,5 +6,5 @@ export const Backdrop = props => <div className={props.hovered !== null ? [class
 export const BackdropMobile = props => 
     <div 
         onClick={props.handleBackdrop}
-        className={props.clicked ? [classes.Backdrop__Mobile, classes.active].join(' ') : classes.Backdrop__Mobile} 
+        className={props.mobileToggle ? [classes.Backdrop__Mobile, classes.active].join(' ') : classes.Backdrop__Mobile} 
     />;
