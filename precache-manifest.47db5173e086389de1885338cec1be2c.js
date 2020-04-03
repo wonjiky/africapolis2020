@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a738b986b486f636b1c4d6e4eac6275",
+    "revision": "b9aab5164e713c43e4cc6c2d21f39542",
     "url": "/africapolis2020/index.html"
   },
   {
-    "revision": "facf31ecca13553dd824",
+    "revision": "d4e4f80c37b192a1a365",
     "url": "/africapolis2020/static/css/main.011f18b2.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/africapolis2020/static/js/2.01355af6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "facf31ecca13553dd824",
-    "url": "/africapolis2020/static/js/main.37109696.chunk.js"
+    "revision": "d4e4f80c37b192a1a365",
+    "url": "/africapolis2020/static/js/main.397bb0fc.chunk.js"
   },
   {
     "revision": "ee236518b1009c82ec7a",

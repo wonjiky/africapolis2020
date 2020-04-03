@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/africapolis2020/precache-manifest.d11d39c262fad82cde8aa98f133610da.js"
+  "/africapolis2020/precache-manifest.47db5173e086389de1885338cec1be2c.js"
 );
 
 self.addEventListener('message', (event) => {
