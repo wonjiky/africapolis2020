@@ -18,9 +18,13 @@ export default function MobileHeaderWrapper(props) {
                     toggleBackward={() => {
                         let firstLevel, secondLevel;
                         if( current.level === 1) {
-                            if( current.firstLevel !== null ) { firstLevel = current.firstLevel; secondLevel = null; }
+                            if( current.firstLevel !== null ) { 
+                                firstLevel = current.firstLevel; 
+                                secondLevel = null; }
                         } else if( current.level === 2) {
-                            if( current.secondLevel !== null) { firstLevel = current.firstLevel; secondLevel = current.secondLevel; }
+                            if( current.secondLevel !== null) { 
+                                firstLevel = current.firstLevel; 
+                                secondLevel = current.secondLevel; }
                         }
                         return setCurrent({ level: current.level - 1, firstLevel: firstLevel, secondLevel: secondLevel })
                 }} />

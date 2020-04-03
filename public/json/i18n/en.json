@@ -64,26 +64,29 @@
             "menu": {
                 "id": 3,
                 "menuHeader": {
-                    "title": "Data driven stories from 200 000 data points.",
+                    "title": "Africapolis data is based on a large inventory of housing and population censuses, electoral registers and other official population sources.",
                     "list": [
-                        { "id":1, "item": "Africa", "url": "africa" }
+                        { "id":1, "item": "About the data", "url": "" }
                     ]
                 },
                 "menuItems": [ 
                     { 
                         "id": 1, 
                         "type": "title",
-                        "title": "Country data", 
+                        "title": "Browse data", 
                         "list": [
-                            { "id": 1, "item": "data" }
+                            { "id": 1, "item": "Country data" },
+                            { "id": 2, "item": "Agglomeration data" }
                         ] 
                     },
                     { 
                         "id": 2,
                         "type": "title", 
-                        "title": "SWAC", 
+                        "title": "Bulk download", 
                         "list": [
-                            {"id": 1, "item": "SWAC" }
+                            {"id": 1, "item": "Country data" },
+                            {"id": 2, "item": "Agglomeration" },
+                            {"id": 3, "item": "GIS" }
                         ]
                     }
                 ] 
@@ -96,7 +99,7 @@
             "menu": {
                 "id": 4,
                 "menuHeader": {
-                    "title": "Data driven stories from 200 000 data points.",
+                    "title": "Africapolis.org and the 2018 Update is produced by the Sahel and West Africa Club (SWAC) in collaboration with e-geopolis.org.",
                     "list": [
                         { "id":1, "item": "Africa", "url": "africa"  }
                     ]
@@ -105,9 +108,12 @@
                     { 
                         "id": 1, 
                         "type": "title",
-                        "title": "Narratives", 
+                        "title": "What is Africapolis", 
                         "list": [
-                            {"id": 1, "item": "Africapolis" }
+                            {"id": 1, "item": "Africapolis" },
+                            {"id": 2, "item": "Defining urban" },
+                            {"id": 3, "item": "Urbanisation dynamics and drivers" },
+                            {"id": 4, "item": "Beyond large cities" }
                         ]
                     },
                     { 
@@ -115,7 +121,8 @@
                         "type": "title", 
                         "title": "SWAC", 
                         "list": [
-                            {"id": 1, "item": "SWAC" }
+                            {"id": 1, "item": "The Sahel and West Africa Club" },
+                            {"id": 2, "item": "Members" }
                         ]
                     }
                 ]

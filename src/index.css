@@ -1,4 +1,4 @@
-@font-face { font-family: Platform; src: url('./assets/fonts/Platform-Light.otf'); } 
+@font-face { font-family: Platform; src: url('./assets/fonts/Platform-Regular.otf'); } 
 
 body {
   margin: 0;
@@ -46,4 +46,43 @@ ul {
 
   /* Support for IE. */
   font-feature-settings: 'liga';
+}
+
+
+@media screen and (min-width: 1480px) {
+  .container {
+      width: 1384px;
+      margin: 0 auto;
+  }
+}
+
+/* LARGER SIZE TABLETS */
+@media screen and (min-width: 1280px) and (max-width: 1479px)  {
+  .container {
+      width: calc(100vw - 92px);
+      margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1279px)  {
+  .container {
+      width: calc(100vw - 72px);
+      margin: 0 auto;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 730px) and (max-width: 959px)  {
+  .container {
+      width: calc(100vw - 72px);
+      margin: 0 auto;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 729px)  {
+  .container {
+      width: calc(100vw - 48px);
+      margin: 0 auto;
+  }
 }

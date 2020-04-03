@@ -7,11 +7,15 @@ import classes from './css/Header.module.css';
 
 export default props => {
     const { data, mouseOver, locale, pathname } = props;
-    
+
     return (
         <div className={classes.Header}>
             <Link to={{pathname:`${locale}`}}> 
-                <Logo url={[data.logos.africapolis, data.logos.africapolisWhite]} hovered={mouseOver} type='Main__nav'/> 
+                <Logo 
+                    url={[data.logos.africapolis, data.logos.africapolisWhite]} 
+                    pathname={pathname}
+                    hovered={mouseOver} 
+                    type='Main__nav'/> 
             </Link>
             <nav>
                 <HeaderItems 

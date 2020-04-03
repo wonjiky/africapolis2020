@@ -1,7 +1,15 @@
 import React from 'react';
+import { ContainerType } from '../../modules/layout/index'; 
+import classes from './css/About.module.css';
 
 export default props => {
+
     return (
-        <div><h1>ABOUT</h1></div>
+        <ContainerType.Text
+        	header='Africapolis Main'>
+            <div className={classes.Contents}></div>
+        </ContainerType.Text> 
     )
 }
+
+

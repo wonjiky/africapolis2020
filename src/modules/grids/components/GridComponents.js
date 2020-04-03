@@ -1,0 +1,53 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import classes from './css/GridComponents.module.css';
+
+export const Wrapper = ({ type, ...props}) => 
+    <div className={
+        [classes.GridWrapper, classes[type]].join(' ')}>
+        {props.children}</div>;
+
+export const Container = (props) => <div className={[classes.GridContainer, 'container'].join(' ')}>{props.children}</div>;
+
+export const Header = ({ title, type, all }) => {
+    return (
+        title && <div className={[classes.GridHeader, classes[`GridHeader_${type}`]].join(' ')}>
+            <h3>{title}</h3>
+            {all ? <span>See all</span> : null}
+        </div>
+    );
+}
+
+export const Grid = ({ data, type }) => {
+    return (
+        data && data.map((d, idx) => (
+            <div key={idx} className={[classes.Grid, classes[type[idx]]].join(' ')}>
+                {d.image 
+                    ? <div className={classes.GridImage}></div> //<div><img src={d.image} alt={d.title}/></div>
+                    : null }
+                <div className={classes.GridContent}>
+                    <h4>{d.title}</h4>
+                    <p>{d.description}</p>
+                </div>
+            </div>
+        ))
+    );
+}
+
+
+export const Latest = ({ type, data }) => {
+    return (
+        <div className={[classes.Grid, classes[type]].join(' ')}>
+            <div className={[classes.GridHeader, classes[`GridHeader_${type}`]].join(' ')}><h3>{data.title}</h3></div>
+            <div className={[classes.GridContent, classes[type]].join(' ')}>
+                {data.list.map((d,idx) => (
+                    <div key={idx} className={classes.GridItems_Latest}>
+                        <span>{d.category}</span>
+                        <h4>{d.title}</h4>
+                    </div>
+                ))}
+            </div>
+        </div>
+    )
+}
+

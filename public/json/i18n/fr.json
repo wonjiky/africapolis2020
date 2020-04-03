@@ -64,19 +64,30 @@
             "menu": {
                 "id": 3,
                 "menuHeader": {
-                    "title": "Data driven stories from 200 000 data points.",
+                    "title": "Les données d’Africapolis reposent sur un vaste répertoire de recensements de l’habitat et de la population, de registres électoraux et d’autres sources officielles concernant la population.",
                     "list": [
-                        { "id":1, "item": "Africa", "url": "africa" }
+                        { "id":1, "item": "About the data", "url": "" }
                     ]
                 },
                 "menuItems": [ 
                     { 
                         "id": 1, 
                         "type": "title",
-                        "title": "Country data", 
+                        "title": "Browse data", 
                         "list": [
-                            { "id": 1, "item": "data", "url": "data"}
+                            { "id": 1, "item": "pays" },
+                            { "id": 2, "item": "agglomérations" }
                         ] 
+                    },
+                    { 
+                        "id": 2, 
+                        "type": "title",
+                        "title": "Bulk download", 
+                        "list": [
+                            {"id": 1, "item": "pays" },
+                            {"id": 2, "item": "agglmérations" },
+                            {"id": 3, "item": "GIS" }
+                        ]
                     }
                 ] 
             }
@@ -88,7 +99,7 @@
             "menu": {
                 "id": 4,
                 "menuHeader": {
-                    "title": "Data driven stories from 200 000 data points.",
+                    "title": "Africapolis.org et la mise à jour 2018 sont produits par le Club du Sahel et de l'Afrique de l'Ouest (CSAO) en collaboration avec e-geopolis.org.",
                     "list": [
                         { "id":1, "item": "Africa", "url": "africa" }
                     ]
@@ -99,14 +110,18 @@
                         "type": "title",
                         "title": "Narratives", 
                         "list": [
-                            {"id": 1, "item": "Africapolis"}
+                            {"id": 1, "item": "Africapolis" },
+                            {"id": 2, "item": "Définir urbain" },
+                            {"id": 3, "item": "Dynamiques et facteurs d'urbanisation" },
+                            {"id": 4, "item": "Au-delà des grandes villes" }
                         ]
                     },
                     { 
                         "id": 2, 
                         "title": "SWAC", 
                         "list": [
-                            {"id": 1, "item": "SWAC"}
+                            {"id": 1, "item": "Le Club du Sahel et de l'Afrique de l'Ouest" },
+                            {"id": 1, "item": "Membres" }
                         ]
                     }
                 ]

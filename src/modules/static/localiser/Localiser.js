@@ -5,7 +5,7 @@ import classes from './Localiser.module.css';
 export default function Localiser({ data, pathname, mouseOver }) {
     
     let i18nStyle = classes.i18nStyle;
-    if ( mouseOver !== undefined && mouseOver !== null ) {
+    if ( mouseOver !== null || pathname.length > 3 ) {
         i18nStyle = [classes.i18nStyle, classes.active].join(' ');
     }
 

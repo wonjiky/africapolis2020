@@ -7,12 +7,15 @@ import classes from './css/HeaderItems.module.css';
 export default props => {
     const { mouseOver, data, locale, pathname } = props;
     return (
-        <ul className={mouseOver !== null ? classes.active : classes.HeaderItems}>
+        <ul className={mouseOver !== null 
+            ? classes.active 
+            : classes.HeaderItems}>
             {data.nav.map((d, idx) => {
                 let linkStyle = classes.Item;
-                if ( mouseOver !== null ) {
+                if ( mouseOver !== null || pathname.length > 3) {
                     linkStyle = [classes.Item, classes.active].join(' ');
-                    if ( mouseOver === d.id ) linkStyle = [linkStyle, classes.selected].join(' ');
+                    // For selected id
+                    // if ( mouseOver === d.id ) linkStyle = [linkStyle, classes.selected].join(' ');
                 }
                 return (
                     <li key={idx} 

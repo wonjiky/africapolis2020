@@ -129,7 +129,7 @@
         width: calc((100vw - 92px)/16 * 12 - 32px);
     }
     .NavList__Items {
-        width: calc((100vw - 92px)/16 * 2 - 32px);
+        width: calc((100vw - 92px)/16 * 4 - 32px);
     }
 }
 
@@ -153,7 +153,7 @@
         width: calc((100vw - 92px)/16 * 12 - 32px);
     }
     .NavList__Items {
-        width: calc((100vw - 92px)/16 * 2 - 32px);
+        width: calc((100vw - 92px)/16 * 6 - 32px);
     }
 }
 
@@ -181,6 +181,6 @@
         column-gap: 25px;
     }
     .NavList__Items {
-        width: calc((100vw - 72px)/16 * 2 - 32px);
+        width: calc((100vw - 72px)/16 * 6 - 32px);
     }
 }

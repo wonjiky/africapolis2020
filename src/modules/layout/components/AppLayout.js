@@ -1,9 +1,9 @@
 import React, { useEffect, useCallback } from 'react';
-import queryString from 'query-string';
 import { useDispatch, useSelector } from "react-redux";
 import { Route, Switch } from 'react-router-dom';
 import { Container } from '../../../containers';
 import { Layout } from '../index';
+import queryString from 'query-string';
 import * as actions from '../../../store/actions/index';
 
 function AppLayout(props) {
@@ -26,8 +26,10 @@ function AppLayout(props) {
     useEffect(() => {
         stableDispatch();
     }, [stableDispatch]);
-    
-    if( i18n.data.length !== 0 ) {
+
+    if( Object.keys(i18n.data).length === 0 ) {
+        return <div></div>
+    } else {
         return (
             <Layout {...props} i18n={i18n.data}>
                 <Switch>
@@ -36,15 +38,12 @@ function AppLayout(props) {
                             key={ID}
                             path={`${props.match.path}${path}`}
                             exact={exact}
-                            render={( {location, history}) =>
-                                <C q={getParams(location)} history={history} /> } 
-                        />
+                            render={({ location, history, match }) =>
+                                <C q={getParams(location)} history={history} location={location} match={match} /> } />
                     ))}
                 </Switch>
             </Layout>
         );
-    } else {
-        return <div></div>
     }
 }
 

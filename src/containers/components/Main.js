@@ -1,27 +1,51 @@
-import React from 'react';
-// import BackgroundImage from '../../Assets/images/bg__main.jpg';
-// import Container from '../../hoc/Container';
-import classes from './css/MainContainer.module.css';
+import React, { useEffect, useCallback }  from 'react';
+import { useDispatch, useSelector } from "react-redux";
+import { ContainerType } from '../../modules/layout/index'; 
+import { Grids } from '../../modules/grids/index';
+import * as actions from '../../store/actions/index';
 
 export default props => {
+    
+    const dispatch = useDispatch();
+    const data = useSelector(state => state.main.data);
+    
+    const stableDispatch = useCallback(() => {
+        dispatch(actions.fetchMainData(props.match.url.substring(1,3)));
+    }, [dispatch]);
 
+    useEffect(() => { stableDispatch(); }, [stableDispatch]);
+    
+    if( Object.keys(data).length === 0 ){
+        return <div></div>
+    }else{
         return (
-            <div className={classes.MainContainer}>
-           </div> 
-        //    <div className={classes.MainContainer}>
-        //             <figure className={classes.Figure}>
-        //                 <div className={classes.Square}>
-        //                     <img className={classes.Image} src={BackgroundImage} />
-        //                     <h1>
-        //                         Africapolis
-        //                     </h1>
-        //                 </div>
-        //             </figure>
-
-        //             <div className={classes.Contents}>
-        //             </div>
-        //    </div>
-    )
+            <ContainerType.Image header={data.header}>
+                <Grids.Wrapper type='intro'>
+                    <Grids.Container>
+                        <Grids.Header title={data.africapolis.title} type='nine' all />
+                        <Grids.Grid data={data.africapolis.list} type={['i_lg','i_sm','i_sm']}/> 
+                        <Grids.Latest type='latest' data={data.latest} />
+                    </Grids.Container>
+                </Grids.Wrapper>
+                <Grids.Wrapper type='intro'>
+                    <Grids.Container>
+                        <Grids.Header title={data.research.title} type='twelve' all />
+                        <Grids.Grid data={data.research.list} type={['md','md','md']} />
+                    </Grids.Container>
+                    <Grids.Container>
+                        <Grids.Header title={data.explore.title} type='twelve' all />
+                        <Grids.Grid data={data.explore.list} type={['md','md','md']} />
+                    </Grids.Container>
+                </Grids.Wrapper>
+                <Grids.Wrapper>
+                    <Grids.Container>
+                            <Grids.Header title={data.media.title} type='twelve' />
+                            <Grids.Grid data={data.media.list} type={['xs','xs','xs','xs','xs','xs']} />
+                    </Grids.Container>
+                </Grids.Wrapper>
+            </ContainerType.Image> 
+        )
+    }
 }
 
 

@@ -33,7 +33,9 @@ const Headers = props => {
     }, [location.pathname]);
     
     return (
-        <header className={mouseOver !== null ? classes.active : ''}>
+        <header className={mouseOver !== null 
+            ? [classes.MainHeader, classes.active].join(' ') 
+            : classes.MainHeader}>
             <Header 
                 data={i18n}
                 mouseOver={mouseOver}

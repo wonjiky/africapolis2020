@@ -1,8 +1,15 @@
 import React from 'react';
+import { ContainerType } from '../../modules/layout/index'; 
+import classes from './css/Data.module.css';
 
-export default props =>{
-        return (
-                <h1>DataContainer</h1>
-        )
-    }
+export default props => {
+
+    return (
+        <ContainerType.Text
+        	header='Africapolis Main'>
+            <div className={classes.Contents}></div>
+        </ContainerType.Text> 
+    )
+}
+
 

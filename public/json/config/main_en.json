@@ -1,0 +1,146 @@
+{
+    "header": "Informing policies for Africa's urban future",
+    "latest": {
+        "title": "Latest",
+        "list": [
+            {
+                "id": 1,
+                "title": "Distance to metropole",
+                "category": "Data driven stories",
+                "url": "/research/distance-to-metropole" 
+            },      
+            {
+                "id": 2,
+                "title": "Madagascar",
+                "category": "Countries",
+                "url": "/countries/madagascar" 
+            },      
+            {
+                "id": 3,
+                "title": "Africapolis Report 2020",
+                "category": "Africapolis",
+                "url": "/africapolis-report" 
+            }      
+        ]
+    },
+    "africapolis": {
+        "title": "Find out more about Africapolis",
+        "list": [
+            {
+                "id": 1,
+                "image": "defining_urban",
+                "url": "defining-urban",
+                "title": "Defining urban",
+                "subTitle": "No internationally accepted definition of urban.",
+                "description": "The word city ( mostly refers to a politico-administrative unit whose boundaries and legal status are defined by national governments according to varying administrative, political and/or functional criteria, contexts and objectives."
+            },
+            {
+                "id": 2,
+                "url": "urbanisation-dynamics-and-drivers",
+                "title": "Urbanisation dynamics and drivers",
+                "subTitle": "Africa has the fastest urban growth rate in the world.",
+                "description": "By 2050, Africa's urban areas will be home to an additional 950 million people."
+            },
+            {
+                "id": 3,
+                "url": "beyond-large-cities",
+                "title": "Beyond large cities",
+                "subTitle": "There are only few big cities but many small ones.",
+                "description": "Africa has 11 urban areas with more than five million inhabitants for a combined population of 95 million people, and it counts 6 740 small urban agglomeration with fewer than 100 000 inhabitants home to 180 million."
+            }
+        ]
+    },
+    "research": {
+        "title": "Data driven stories",
+        "list": [
+            {
+                "id": 1,
+                "image": "urban_agglomeration_network",
+                "url": "urban-agglomeration_network",
+                "title": "Urban agglomeration network",
+                "subTitle": "Distance is a physical as well as a socio-economic concept.",
+                "description": "A total of 320 162 pairings are made by connecting all urban agglomerations that are 120 kilometres or less from one another."
+            },
+            {
+                "id": 2,
+                "image": "cross_border_agglomerations",
+                "url": "cross-border-agglomerations",
+                "title": "Cross-border agglomerations in Africa",
+                "subTitle": "In Africa, cities in close proximity are often located across the border from one another.",
+                "description": "More than 42 million people (almost 8% of total urban population) of the continent live in these 645 cross-border cities."
+            },
+            {
+                "id": 3,
+                "image": "largest_agglomerations",
+                "url": "largest-agglomerations",
+                "title": "Top 50 largest agglomerations in Africa",
+                "subTitle": "Twenty of the 50 largest agglomeration by built-up area are in Nigeria and Kenya.",
+                "description": "One of the main drivers of urban growth in Africa is the expansion of built-up areas."
+            }   
+        ]
+    },
+    "explore": {
+        "title": "Explore Africapolis",
+        "list": [
+            {
+                "id": 1,
+                "image": "urban_agglomeration_network",
+                "url": "urban-agglomeration_network",
+                "title": "Explore",
+                "subTitle": "Distance is a physical as well as a socio-economic concept.",
+                "description": "A total of 320 162 pairings are made by connecting all urban agglomerations that are 120 kilometres or less from one another."
+            },
+            {
+                "id": 2,
+                "image": "cross_border_agglomerations",
+                "url": "cross-border-agglomerations",
+                "title": "Country report",
+                "subTitle": "In Africa, cities in close proximity are often located across the border from one another.",
+                "description": "More than 42 million people (almost 8% of total urban population) of the continent live in these 645 cross-border cities."
+            },
+            {
+                "id": 3,
+                "image": "data",
+                "url": "/data",
+                "title": "Data",
+                "subTitle": "In Africa, cities in close proximity are often located across the border from one another.",
+                "description": "More than 42 million people (almost 8% of total urban population) of the continent live in these 645 cross-border cities."
+            }
+        ]
+    },
+    "media": {
+        "title": "In the media",
+        "list": [
+            {
+                "id": 1,
+                "url": "urban-agglomeration_network",
+                "title": "Project Syndicate"
+            },
+            {
+                "id": 2,
+                "url": "cross-border-agglomerations",
+                "title": "Le Monde l'Afrique"
+            },
+            {
+                "id": 3,
+                "url": "/data",
+                "title": "Il Sole 24"
+            },
+            {
+                "id": 4,
+                "url": "urban-agglomeration_network",
+                "title": "Project Syndicate"
+            },
+            {
+                "id": 5,
+                "url": "cross-border-agglomerations",
+                "title": "Le Monde l'Afrique"
+            },
+            {
+                "id": 6,
+                "url": "/data",
+                "title": "Il Sole 24"
+            }
+        ]
+    }  
+}    
