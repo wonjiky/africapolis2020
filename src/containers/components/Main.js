@@ -10,10 +10,14 @@ export default props => {
     const data = useSelector(state => state.main.data);
     
     const stableDispatch = useCallback(() => {
+        console.log(props.match.url);
         dispatch(actions.fetchMainData(props.match.url.substring(1,3)));
-    }, [dispatch]);
+    }, [props.match.url, dispatch]);
 
-    useEffect(() => { stableDispatch(); }, [stableDispatch]);
+    useEffect(() => { 
+        stableDispatch(); 
+    }, [stableDispatch]);
+
     
     if( Object.keys(data).length === 0 ){
         return <div></div>
