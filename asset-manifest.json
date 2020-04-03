@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/africapolis2020/static/css/main.011f18b2.chunk.css",
+    "main.js": "/africapolis2020/static/js/main.37109696.chunk.js",
+    "main.js.map": "/africapolis2020/static/js/main.37109696.chunk.js.map",
+    "runtime-main.js": "/africapolis2020/static/js/runtime-main.44f800b2.js",
+    "runtime-main.js.map": "/africapolis2020/static/js/runtime-main.44f800b2.js.map",
+    "static/js/2.01355af6.chunk.js": "/africapolis2020/static/js/2.01355af6.chunk.js",
+    "static/js/2.01355af6.chunk.js.map": "/africapolis2020/static/js/2.01355af6.chunk.js.map",
+    "index.html": "/africapolis2020/index.html",
+    "precache-manifest.d11d39c262fad82cde8aa98f133610da.js": "/africapolis2020/precache-manifest.d11d39c262fad82cde8aa98f133610da.js",
+    "service-worker.js": "/africapolis2020/service-worker.js",
+    "static/css/main.011f18b2.chunk.css.map": "/africapolis2020/static/css/main.011f18b2.chunk.css.map",
+    "static/js/2.01355af6.chunk.js.LICENSE.txt": "/africapolis2020/static/js/2.01355af6.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/africapolis2020/static/media/Platform-Regular.15c265ad.otf",
+    "static/media/africapolis.svg": "/africapolis2020/static/media/africapolis.a5b9231f.svg",
+    "static/media/arrow_backward.svg": "/africapolis2020/static/media/arrow_backward.c0be05d5.svg",
+    "static/media/arrow_forward.svg": "/africapolis2020/static/media/arrow_forward.4c749b37.svg",
+    "static/media/bg__main.jpg": "/africapolis2020/static/media/bg__main.4b50676b.jpg",
+    "static/media/close.svg": "/africapolis2020/static/media/close.a99255e4.svg",
+    "static/media/white_africapolis.svg": "/africapolis2020/static/media/white_africapolis.80e739e7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.44f800b2.js",
+    "static/js/2.01355af6.chunk.js",
+    "static/css/main.011f18b2.chunk.css",
+    "static/js/main.37109696.chunk.js"
+  ]
+}

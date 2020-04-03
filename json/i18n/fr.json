@@ -1,0 +1,138 @@
+{
+    "nav": [
+        { 
+            "id": 1, 
+            "item": "Pays",
+            "url": "countries",
+            "menu": {
+                "id": 1,
+                "menuHeader": {
+                    "title": "Explore 5 regions, 51 countries and 7600 agglomerations.",
+                    "list": [
+                        { "id": 1, "item": "l'Afrique", "url": "africa" },
+                        { "id": 2, "item": "Centrale", "url": "central-africa" },
+                        { "id": 3, "item": "l'Est", "url": "east-africa" },
+                        { "id": 4, "item": "Nord", "url": "north-africa" },
+                        { "id": 5, "item": "Sud", "url": "southern-africa" },
+                        { "id": 6, "item": "l'Ouest", "url": "west-africa" }
+                    ]
+                },
+                "menuItems": [ 
+                    { 
+                        "id": 1,
+                        "type": "selector", 
+                        "title": [
+                            {"id": 1, "item": "Explore", "url": ""}, 
+                            {"id": 2, "item": "Country report", "url": "country-report"}
+                        ], 
+                        "list": [{"C_ID":1,"R_ID":4,"item":"Angola"},{"C_ID":2,"R_ID":1,"item":"Burundi"},{"C_ID":3,"R_ID":5,"item":"Bénin"},{"C_ID":4,"R_ID":5,"item":"Burkina Faso"},{"C_ID":5,"R_ID":4,"item":"Botswana"},{"C_ID":6,"R_ID":1,"item":"République centrafricaine"},{"C_ID":7,"R_ID":5,"item":"Côte d’Ivoire"},{"C_ID":8,"R_ID":1,"item":"Cameroun"},{"C_ID":9,"R_ID":1,"item":"DRC"},{"C_ID":10,"R_ID":1,"item":"RC"},{"C_ID":11,"R_ID":5,"item":"Cabo Verde"},{"C_ID":12,"R_ID":2,"item":"Djibouti"},{"C_ID":13,"R_ID":3,"item":"Algérie"},{"C_ID":14,"R_ID":3,"item":"Égypte"},{"C_ID":15,"R_ID":2,"item":"Érythrée"},{"C_ID":16,"R_ID":2,"item":"Éthiopie"},{"C_ID":17,"R_ID":1,"item":"Gabon"},{"C_ID":18,"R_ID":5,"item":"Ghana"},{"C_ID":19,"R_ID":5,"item":"Guinée"},{"C_ID":20,"R_ID":5,"item":"Gambie"},{"C_ID":21,"R_ID":5,"item":"Guinée-Bissau"},{"C_ID":22,"R_ID":1,"item":"Guinée équatoriale"},{"C_ID":23,"R_ID":2,"item":"Kenya"},{"C_ID":24,"R_ID":5,"item":"Libéria"},{"C_ID":25,"R_ID":3,"item":"Libye"},{"C_ID":26,"R_ID":4,"item":"Lesotho"},{"C_ID":27,"R_ID":3,"item":"Maroc"},{"C_ID":28,"R_ID":5,"item":"Mali"},{"C_ID":29,"R_ID":4,"item":"Mozambique"},{"C_ID":30,"R_ID":3,"item":"Mauritanie"},{"C_ID":31,"R_ID":4,"item":"Malawi"},{"C_ID":32,"R_ID":4,"item":"Namibie"},{"C_ID":33,"R_ID":5,"item":"Niger"},{"C_ID":34,"R_ID":5,"item":"Nigéria"},{"C_ID":35,"R_ID":2,"item":"Rwanda"},{"C_ID":36,"R_ID":2,"item":"Soudan"},{"C_ID":37,"R_ID":5,"item":"Sénégal"},{"C_ID":38,"R_ID":5,"item":"Sierra Leone"},{"C_ID":39,"R_ID":2,"item":"Somalie"},{"C_ID":40,"R_ID":2,"item":"Soudan du Sud"},{"C_ID":41,"R_ID":1,"item":"Sao Tomé-et-Principe"},{"C_ID":42,"R_ID":4,"item":"Royaume d’Eswatini"},{"C_ID":43,"R_ID":1,"item":"Tchad"},{"C_ID":44,"R_ID":5,"item":"Togo"},{"C_ID":45,"R_ID":3,"item":"Tunisie"},{"C_ID":46,"R_ID":2,"item":"Tanzanie"},{"C_ID":47,"R_ID":2,"item":"Ouganda"},{"C_ID":48,"R_ID":4,"item":"Afrique du Sud"},{"C_ID":49,"R_ID":4,"item":"Zambie"},{"C_ID":50,"R_ID":4,"item":"Zimbabwe"}]
+                    }
+                ] 
+            }
+        },
+        { 
+            "id": 2, 
+            "item": "Analyses",
+            "url": "research",
+            "menu":  {
+                "id": 2,
+                "menuHeader": {
+                    "title": "Data driven stories from 200 000 data points.",
+                    "list": [
+                        { "id":1, "item": "Africa", "url": "africa" }
+                    ]
+                },
+                "menuItems": [ 
+                    { 
+                        "id": 1, 
+                        "type": "title",
+                        "title": "Data driven stories", 
+                        "list": [
+                            { "id": 1, "item": "Les plus grandes agglomérations par population" },
+                            { "id": 2, "item": "Réseaux d'agglomérations urbaines" },
+                            { "id": 3, "item": "Cross-border agglomerations in Africa" },
+                            { "id": 4, "item": "Distance to national metropoles" }
+                        ]
+                    }
+                ] 
+            }
+        },
+        { 
+            "id": 3, 
+            "item": "Data",
+            "url": "data",
+            "menu": {
+                "id": 3,
+                "menuHeader": {
+                    "title": "Les données d’Africapolis reposent sur un vaste répertoire de recensements de l’habitat et de la population, de registres électoraux et d’autres sources officielles concernant la population.",
+                    "list": [
+                        { "id":1, "item": "About the data", "url": "" }
+                    ]
+                },
+                "menuItems": [ 
+                    { 
+                        "id": 1, 
+                        "type": "title",
+                        "title": "Browse data", 
+                        "list": [
+                            { "id": 1, "item": "pays" },
+                            { "id": 2, "item": "agglomérations" }
+                        ] 
+                    },
+                    { 
+                        "id": 2, 
+                        "type": "title",
+                        "title": "Bulk download", 
+                        "list": [
+                            {"id": 1, "item": "pays" },
+                            {"id": 2, "item": "agglmérations" },
+                            {"id": 3, "item": "GIS" }
+                        ]
+                    }
+                ] 
+            }
+        },
+        { 
+            "id": 4, 
+            "item": "À propos",
+            "url": "about",
+            "menu": {
+                "id": 4,
+                "menuHeader": {
+                    "title": "Africapolis.org et la mise à jour 2018 sont produits par le Club du Sahel et de l'Afrique de l'Ouest (CSAO) en collaboration avec e-geopolis.org.",
+                    "list": [
+                        { "id":1, "item": "Africa", "url": "africa" }
+                    ]
+                },
+                "menuItems": [ 
+                    { 
+                        "id": 1, 
+                        "type": "title",
+                        "title": "Narratives", 
+                        "list": [
+                            {"id": 1, "item": "Africapolis" },
+                            {"id": 2, "item": "Définir urbain" },
+                            {"id": 3, "item": "Dynamiques et facteurs d'urbanisation" },
+                            {"id": 4, "item": "Au-delà des grandes villes" }
+                        ]
+                    },
+                    { 
+                        "id": 2, 
+                        "title": "SWAC", 
+                        "list": [
+                            {"id": 1, "item": "Le Club du Sahel et de l'Afrique de l'Ouest" },
+                            {"id": 1, "item": "Membres" }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "i18nSelector": [ {"id": 1, "item": "EN", "url": "en"}, { "id": 2, "item": "FR", "url": "fr"} ],
+    "logos": {
+        "africapolis": "africapolis",
+        "africapolisWhite": "white_africapolis",
+        "swac_en": "swac_en",
+        "swac_fr": "swac_fr"
+    }
+}
