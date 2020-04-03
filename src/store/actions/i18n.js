@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { i18Instance } from '../../axios';
 
 function fetchI18nDataFail(err) {
     return {
@@ -8,7 +9,7 @@ function fetchI18nDataFail(err) {
 
 export function fetchI18nData(i18n){
     return dispatch => {
-        axios.get(`/json/i18n/${i18n}.json`)
+        i18Instance.get(`/json/i18n/${i18n}.json`)
             .then(res => {
                 dispatch({
                     type: "FETCH_i18N_DATA",

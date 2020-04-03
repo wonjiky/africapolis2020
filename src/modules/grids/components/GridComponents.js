@@ -13,15 +13,16 @@ export const Header = ({ title, type, all }) => {
     return (
         title && <div className={[classes.GridHeader, classes[`GridHeader_${type}`]].join(' ')}>
             <h3>{title}</h3>
-            {all ? <span>See all</span> : null}
+            {all ? <NavLink to=''>See all</NavLink> : null}
         </div>
     );
 }
 
 export const Grid = ({ data, type }) => {
+    console.log(data);
     return (
         data && data.map((d, idx) => (
-            <div key={idx} className={[classes.Grid, classes[type[idx]]].join(' ')}>
+            <NavLink to='' key={idx} className={[classes.Grid, classes[type[idx]]].join(' ')}>
                 {d.image 
                     ? <div className={classes.GridImage}></div> //<div><img src={d.image} alt={d.title}/></div>
                     : null }
@@ -29,7 +30,7 @@ export const Grid = ({ data, type }) => {
                     <h4>{d.title}</h4>
                     <p>{d.description}</p>
                 </div>
-            </div>
+            </NavLink>
         ))
     );
 }
@@ -37,7 +38,7 @@ export const Grid = ({ data, type }) => {
 
 export const Latest = ({ type, data }) => {
     return (
-        <div className={[classes.Grid, classes[type]].join(' ')}>
+        <NavLink to='/' className={[classes.Grid, classes[type]].join(' ')}>
             <div className={[classes.GridHeader, classes[`GridHeader_${type}`]].join(' ')}><h3>{data.title}</h3></div>
             <div className={[classes.GridContent, classes[type]].join(' ')}>
                 {data.list.map((d,idx) => (
@@ -47,7 +48,7 @@ export const Latest = ({ type, data }) => {
                     </div>
                 ))}
             </div>
-        </div>
+        </NavLink>
     )
 }
 

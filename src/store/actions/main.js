@@ -1,3 +1,4 @@
+import { mainInstance } from '../../axios';
 import axios from 'axios';
 
 function fetchMainDataFail(err) {
@@ -8,7 +9,7 @@ function fetchMainDataFail(err) {
 
 export function fetchMainData(i18n){
     return dispatch => {
-        axios.get(`/json/config/main_${i18n}.json`)
+        mainInstance.get(`/json/config/main_${i18n}.json`)
             .then(res => {
                 dispatch({
                     type: "FETCH_MAIN_DATA",
